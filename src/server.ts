@@ -8,4 +8,4 @@ app.use(express.json());
 
 app.use("/categories", categoriesRoutes);
 
-app.listen(3032, () => console.log("Server is running!"));
+app.listen(3033, () => console.log("Server is running!"));
