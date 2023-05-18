@@ -1,5 +1,8 @@
 import { DataSource } from "typeorm";
 
+import { Category } from "../modules/cars/entities/Category";
+import { CreateCategories1684318819296 } from "./migrations/1684318819296-CreateCategories";
+
 const AppDataSource = new DataSource({
   type: "postgres",
   host: "localhost",
@@ -9,8 +12,8 @@ const AppDataSource = new DataSource({
   database: "rentx",
   synchronize: false,
   logging: false,
-  entities: ["./src/modules/**/entities/*.ts"],
-  migrations: ["./src/database/migrations/*.ts"],
+  entities: [Category],
+  migrations: [CreateCategories1684318819296],
   subscribers: [],
 });
 
