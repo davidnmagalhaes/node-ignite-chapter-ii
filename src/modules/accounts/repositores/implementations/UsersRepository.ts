@@ -8,7 +8,7 @@ import { IUserRepository } from "../IUserRepository";
 class UsersRepository implements IUserRepository {
   private repository: Repository<User>;
 
-  constructyor() {
+  constructor() {
     this.repository = AppDataSource.getRepository(User);
   }
 
