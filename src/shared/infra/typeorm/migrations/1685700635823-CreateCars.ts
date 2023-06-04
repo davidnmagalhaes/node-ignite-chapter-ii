@@ -20,6 +20,10 @@ export class CreateCars1685700635823 implements MigrationInterface {
             type: "numeric",
           },
           {
+            name: "license_plate",
+            type: "varchar",
+          },
+          {
             name: "available",
             type: "boolean",
             default: "true",
