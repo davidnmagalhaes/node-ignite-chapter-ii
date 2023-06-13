@@ -18,7 +18,6 @@ export class CreateSpecifications1684776480368 implements MigrationInterface {
           {
             name: "description",
             type: "varchar",
-            isPrimary: true,
           },
           {
             name: "created_at",
